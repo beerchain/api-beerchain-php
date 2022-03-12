@@ -2,8 +2,7 @@ import { beercoinAbi } from './web3_beercoin_abi.js';
 
 import Web3 from 'web3';
 
-async function queryBeercoinBalance(contract, address)
-{
+async function queryBeercoinBalance(contract, address) {
     // Query provider for token balance
     let balance = await contract.methods.balanceOf(address).call();
 
