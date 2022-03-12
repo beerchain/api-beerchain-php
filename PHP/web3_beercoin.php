@@ -24,7 +24,7 @@ function queryBeercoinBalance($contract, $address)
 
 // Replace URL with yours provided by us
 $web3 = new Web3('https://mainnet.infura.io/v3/e71bd195b7af48dbbcfcdfb3d822d712');
-//                https://beerchain.azurewebsites.net/eth
+//                http://mainnet.beerchain.technology/v1/SUBSCRIPTIONKEY
 
 // The address points to the deployed Beercoin smart contract and is constant
 $contract = (new Contract($web3->provider, $beercoinAbi))->at('0x7367A68039d4704f30BfBF6d948020C3B07DFC59');

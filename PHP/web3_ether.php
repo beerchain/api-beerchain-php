@@ -21,6 +21,7 @@ function queryEtherBalance($web3, $address)
 
 // Replace URL with yours provided by us
 $web3 = new Web3('https://mainnet.infura.io/v3/e71bd195b7af48dbbcfcdfb3d822d712');
+//                http://mainnet.beerchain.technology/v1/SUBSCRIPTIONKEY
 
 // Replace address by the user's one
 $etherBalance = queryEtherBalance($web3, '0x5199Ca9cac93BCE0F6C4C9135F7165921A0E7973');
