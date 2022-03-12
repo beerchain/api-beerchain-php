@@ -12,10 +12,10 @@ function queryEtherBalance($web3, $address)
         $balance = $b;
     });
 
-    // Convert the retrieved wei balance to gwei so it is small enough to be parsed by floatval
+    // Convert the retrieved Wei balance to Gwei so it is small enough to be parsed by floatval
     list($bnq, $bnr) = Utils::toEther($balance, 'gwei');
 
-    // Convert the gwei balance to ether with decimal places
+    // Convert the Gwei balance to Ether with decimal places
     return floatval($bnq->toString()) / 1000000000;
 }
 

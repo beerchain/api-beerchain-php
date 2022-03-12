@@ -29,7 +29,7 @@ $web3 = new Web3('https://mainnet.infura.io/v3/e71bd195b7af48dbbcfcdfb3d822d712'
 // The address points to the deployed Beercoin smart contract and is constant
 $contract = (new Contract($web3->provider, $beercoinAbi))->at('0x7367A68039d4704f30BfBF6d948020C3B07DFC59');
 
-// Replace address by the user's one
+// Replace address with the user's one
 $beercoinBalance = queryBeercoinBalance($contract, '0x5199Ca9cac93BCE0F6C4C9135F7165921A0E7973');  
 
 echo 'Beercoin balance: '.$beercoinBalance.PHP_EOL;

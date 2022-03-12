@@ -15,6 +15,11 @@ function getAddressFromPrivateKey($privateKey)
     return '0x'.(new Address($privateKey))->get();
 }
 
+function toChecksumAddress($address)
+{
+    return Utils::toChecksumAddress($address);
+}
+
 // Store this in database
 $privateKey = generateEthereumPrivateKey();
 
@@ -22,7 +27,7 @@ $privateKey = generateEthereumPrivateKey();
 $address = getAddressFromPrivateKey($privateKey);
 
 // Display this to end users if desired
-$checksumAddress = Utils::toChecksumAddress($address);
+$checksumAddress = toChecksumAddress($address);
 
 echo 'Private key: '.$privateKey.PHP_EOL;
 echo 'Standard address: '.$address.PHP_EOL;
